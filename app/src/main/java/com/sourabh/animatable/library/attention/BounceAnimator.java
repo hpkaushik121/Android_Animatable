@@ -22,12 +22,12 @@
  * SOFTWARE.
  */
 
-package com.sourabh.animatable.animatable.library.attention;
+package com.sourabh.animatable.library.attention;
 
 import android.animation.ObjectAnimator;
 import android.view.View;
 
-import com.sourabh.animatable.animatable.library.BaseViewAnimator;
+import com.sourabh.animatable.library.BaseViewAnimator;
 
 public class BounceAnimator extends BaseViewAnimator {
     @Override
