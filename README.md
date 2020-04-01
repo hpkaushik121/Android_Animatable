@@ -1,5 +1,8 @@
 # Android_Animatable
 
+[![](https://jitpack.io/v/hpkaushik121/Android_Animatable.svg)](https://jitpack.io/#hpkaushik121/Android_Animatable)
+
+
 ## `AnimatableExplorer` example
 
 See [`Examples/AnimatableExplorer`]folder for an example project demoing animations available out of the box and more. 
@@ -127,8 +130,51 @@ Animations are heavily inspired by [Animated.css](https://daneden.github.io/anim
 * `zoomOutLeft`
 * `zoomOutRight`
 
-## [Changelog]
+## [Usage]
 
+Add `	maven { url 'https://jitpack.io' }` in `build.gradle` 
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  
+```
+Add dependency in `build.gradle`
+```
+dependencies {
+	        implementation 'com.github.hpkaushik121:Android_Animatable:Tag'
+	}
+```
+
+
+```
+<com.sourabh.animateable.Animateable
+        android:layout_width="wrap_content"
+        app:duration="1000"
+        app:animation="bounceIn"
+        app:autoStart="true"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </com.sourabh.animateable.Animateable>
+```
+    
+* `durantion` -> Integer
+* `autostart` -> Boolean
+* `animation` -> `bounce | bounceInRight | bounceInLeft | bounceInUp | bounceInDown | flash | rubberBand | pulse | shake | swing | wobble | tada | standUp | wave | rollin | rollOut | bounceIn | fadeInUp | fadeInDown | fadeInLeft | fadeInRight | fadeOut | fadeOutUp | fadeOutDown | fadeOutRight | fadeOutLeft | flipInX | flipInY | flipOutX | flipOutY | rotateIn | rotateInDownLeft | rotateInDownRight | rotateInUpLeft | rotateInUpRight`
+* `repeatCount` -> Integer
+* `repeatMode`  -> `INFINITE | RESTART | REVERSE | START_ON_FIRST_FRAME | ABSOLUTE | RELATIVE_TO_SELF | RELATIVE_TO_PARENT | ZORDER_NORMAL | ZORDER_TOP | ZORDER_BOTTOM`
+
+* `startDelay` -> Integer
 ## License
 
 [MIT License]
