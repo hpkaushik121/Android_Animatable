@@ -145,7 +145,7 @@ allprojects {
 Add dependency in `build.gradle`
 ```
 dependencies {
-	        implementation 'com.github.hpkaushik121:Android_Animatable:Tag'
+	        implementation 'com.github.hpkaushik121:Android_Animatable:1.0.1'
 	}
 ```
 
